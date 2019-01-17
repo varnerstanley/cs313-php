@@ -1,0 +1,36 @@
+.container {
+  background-color: dodgerblue;
+  width: 30%;
+  margin: 20px auto;
+}
+.content {
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+}
+.content:hover {
+  font-weight: bold;
+}
+.button {
+  background-color: #2a2a2a;
+  border-radius: 5px;
+  color: #fff;
+  width: 100%;
+  box-shadow: none;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+.btn {
+  margin: 10px auto;
+  width: 30%;
+}
+label {
+  margin: 10px;
+  padding: 10px;
+}
+.input {
+  padding: 5px;
+}
+.chgBtn {
+  margin-top: 10px;
+}
