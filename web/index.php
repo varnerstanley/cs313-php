@@ -8,9 +8,17 @@
   </head>
   <body>
     <header>
-
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     </header>
-    
+
     <main>
       <section class="intro">
         <div class="headpic">
@@ -34,5 +42,6 @@
     <footer>
         Date thanks to PHP <?php echo date('j F, Y', getlastmod()); ?>
     </footer>
+    <script type="text/javascript" src="js/nav.js"></script>
   </body>
 </html>
