@@ -28,6 +28,7 @@
         <div class="subContainer">
           <div class="bio">
             <p>My name is Stanley. I'm from Utah. I love to hangout with my family, go boating and workout. Right now I am in love with anything and everything that has to do with full stack engineering. I love building things. I love taking an idea from scratch and the process of development for it to become a reality.</p>
+            <p>This page is responsive. Try it out and see the menu toggle functionality.</p>
           </div>
           <div class="assign-btn">
             <h3 class="assign"><a href="assignments.php">Assignments</a></h3>
