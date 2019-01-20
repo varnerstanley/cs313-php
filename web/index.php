@@ -10,18 +10,7 @@
     <header>
 
     </header>
-    <nav class="clearfix">
-              <img id="logo" src="images/dumbbell.svg" alt="my fitness trainer logo">
-                <h1 id="nav-title">My Fitness Trainer</h1>
-                <button onclick="toggleMenu()">&#9776;</button>
-                <ul class="topnav hide" id="primarynav">
-                  <li class="active"><a href="index.html">Home</a></li>
-                  <li><a href="pricing.html">Pricing</a></li>
-                  <li><a href="aboutUs.html">About us</a></li>
-                  <li><a href="ourProcess.html">Our Process</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </nav>
+    
     <main>
       <section class="intro">
         <div class="headpic">
@@ -43,7 +32,7 @@
     </main>
 
     <footer>
-      <?php echo date('j F, Y', getlastmod()); ?>
+        Date thanks to PHP <?php echo date('j F, Y', getlastmod()); ?>
     </footer>
   </body>
 </html>
