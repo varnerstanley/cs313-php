@@ -19,28 +19,28 @@
             </label>
             <label>Comments:
                 <textarea name='comments'></textarea>
-            </label>
+            </label><br>
             <label> North America
                 <input type='checkbox' name='continent[]' value='North America'/>
-            </label>
+            </label><br>
             <label> South America
                 <input type='checkbox' name='continent[]' value='South America'/>
-            </label>
+            </label><br>
             <label> Europe
                 <input type='checkbox' name='continent[]' value='Europe'/>
-            </label>
+            </label><br>
             <label> Asia
                     <input type='checkbox' name='continent[]' value='Asia'/>
-            </label>
+            </label><br>
             <label> Africa
                 <input type='checkbox' name='continent[]' value='Africa'/>
-            </label>
+            </label><br>
             <label> Antaritica
                 <input type='checkbox' name='continent[]' value='Antartica'/>
-            </label>
+            </label><br>
             <label> Australia
                 <input type='checkbox' name='continent[]' value='Australia'/>
-            </label>
+            </label><br>
             <input type='submit'/>
         </form>
 
