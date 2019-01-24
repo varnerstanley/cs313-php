@@ -12,10 +12,10 @@
                 <input type='text' name='email'/>
             </label>
             <label>Major:
-                <label>Computer Science<input type='radio'name='major' value='Computer Science'></label>
-                <label>Web Design<input type='radio'name='major' value='Web Design  Development'></label>
-                <label>Computer Engineering<input type='radio'name='major' value='Computer Engineering'></label>
-                <label>Computer Information Systems<input type='radio'name='major' value='Computer Information Technology'></label>
+                <label>Computer Science<input type='radio'name='major' value='Computer Science'></label><br>
+                <label>Web Design<input type='radio'name='major' value='Web Design  Development'></label><br>
+                <label>Computer Engineering<input type='radio'name='major' value='Computer Engineering'></label><br>
+                <label>Computer Information Systems<input type='radio'name='major' value='Computer Information Technology'></label><br>
             </label>
             <label>Comments:
                 <textarea name='comments'></textarea>
