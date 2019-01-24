@@ -7,10 +7,10 @@
         <form action='team_assignment.php' method='POST'>
             <label>Name:
                 <input type='text' name='name'/>
-            </label>
+            </label><br>
             <label>Email:
                 <input type='text' name='email'/>
-            </label>
+            </label><br>
             <label>Major:
                 <label>Computer Science<input type='radio'name='major' value='Computer Science'></label><br>
                 <label>Web Design<input type='radio'name='major' value='Web Design  Development'></label><br>
