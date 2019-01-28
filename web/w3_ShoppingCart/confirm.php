@@ -16,17 +16,17 @@ $_SESSION['zip']= $_POST['zip'];
     </head>
         <body>
             <div>
-             <h1 class="cartHeading"><?php echo $_SESSION['name']; ?>, thank you! </h1> 
+             <h1 class="cartHeading"><?php echo $_SESSION['name']; ?>, thank you! </h1>
              <p>Products:</p>
              <?php
              echo "<div class='cartList'>";
                     foreach ($_SESSION["proteins"] as $protein) {
-                        echo '<div class="subList" id="'. $index .'"> ';
+                        echo '<div class="subList2" id="'. $index .'"> ';
                         echo print_r($protein);
                         echo '</div>';
                     }
                     echo "</div>"
-            
+
             ?>
             <p> Shipping Address: </p>
             <?php
@@ -36,4 +36,3 @@ $_SESSION['zip']= $_POST['zip'];
             </div>
         </body>
 </html>
- 

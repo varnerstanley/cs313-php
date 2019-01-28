@@ -39,7 +39,7 @@ session_start();
         addProtein($plant);
       } else if (isset($_GET['whey'])) {
         addProtein($whey);
-      } else {
+      } else if (isset($_GET['goats_whey'])){
         addProtein($goats);
       }
 
