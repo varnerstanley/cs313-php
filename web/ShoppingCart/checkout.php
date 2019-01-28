@@ -19,9 +19,9 @@
             </p>
             <p id="addresslabel">
                 Address:<br/>
-                <label for="cityaddress">City:</label><input type="text" name="city" class="pInfo" id="cityaddress" required/><br/><br/>
-                <label for="stateaddress">State:</label><input type="text" name="state" class="pInfo" id="stateaddress" placeholder="UT" required pattern= "[A-Za-z]{2}"/><br/><br/>
-                <label for="zipaddress">Zip Code:</label><input type="number" name="zip" class="pInfo" type="" id="zipaddress" required pattern="[0-9]{6}"/>
+                <label for="cityaddress">City:<input type="text" name="city" id="cityaddress" required/></label><br/><br/>
+                <label for="stateaddress">State:<input type="text" name="state" id="stateaddress" placeholder="UT" required pattern= "[A-Za-z]{2}"/></label><br/><br/>
+                <label for="zipaddress">Zip Code:<input type="number" name="zip" id="zipaddress" required pattern="[0-9]{6}"/></label>
 
             </p>
            <input type="submit" name="input" class="btn" value="Buy Now">
