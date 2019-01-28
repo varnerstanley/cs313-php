@@ -35,7 +35,6 @@ session_start();
     
     if (isset($_GET['delete'])) {
         unset($_SESSION["proteins"][$_GET['id']]);
-        
       }
       ?>
     
