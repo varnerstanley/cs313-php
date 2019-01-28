@@ -7,7 +7,10 @@
     <title>Assignments Page</title>
   </head>
   <body>
-    <h1>Coming Soon...</h1>
+    <h1>See Below</h1>
+    <ul>
+      <li><a href="ShoppingCart/shoppingCart.php">Shopping Cart</a></li>
+    </ul>
   </body>
 </html>
 
