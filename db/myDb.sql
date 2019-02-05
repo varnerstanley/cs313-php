@@ -1,24 +1,24 @@
 CREATE DATABASE vegetables;
 
-CREATE TABLE public.names {
+CREATE TABLE names (
 	id SERIAL NOT NULL PRIMARY KEY,	
-	vegetable.name VARCHAR(30) NOT NULL,
+	vegetable_name VARCHAR(30) NOT NULL,
 	description VARCHAR(200) NOT NULL 
-};
+);
 
-CREATE TABLE public.days {
+CREATE TABLE days (
 	id SERIAL NOT NULL PRIMARY KEY,
 	day VARCHAR(20) NOT NULL
-};
+);
 
-CREATE TABLE public.users {
+CREATE TABLE users (
 	id SERIAL NOT NULL PRIMARY KEY,
 	username VARCHAR(100) NOT NULL UNIQUE,
 	password VARCHAR(100) NOT NULL,
 	display_name VARCHAR(100) NOT NULL
-	};
+	);
 
-CREATE TABLE public.meals {
+CREATE TABLE meals (
 	id SERIAL NOT NULL PRIMARY KEY,
 	meal VARCHAR(15) NOT NULL
-};
+);
