@@ -56,7 +56,7 @@
       }
 
       echo "<h2> Vegetable List: </h2>";
-      echo '<div class="vContainer"';
+      echo '<div class="vContainer">';
       foreach ($db->query('SELECT vegetable_name, description FROM names') as $row)
       {
         echo '<p class="vName"><b>' . 'Veggie Name: ' . '</b>' . $row['vegetable_name'];
