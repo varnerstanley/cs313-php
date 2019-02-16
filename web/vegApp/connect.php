@@ -5,7 +5,7 @@
 
 // Create or access a Session
  session_start();
- 
+
 // default Heroku Postgres configuration URL
 $dbUrl = getenv('DATABASE_URL');
 
@@ -39,6 +39,14 @@ foreach ($db->query('SELECT now()') as $row)
  print "<p>$row[0]</p>\n\n";
 }
 
+foreach ($db->query('SELECT vegetable_name, description FROM names') as $row)
+{
+  echo 'Veggie Name: ' . $row['vegetable_name'];
+  echo ' Description: ' . $row['description'];
+  echo '<br/>';
+}
+
+echo "<h2> Hello </h2>";
 ?>
 
 </body>
