@@ -1,3 +1,5 @@
+<html>
+<body>
 <?php
 
 $db = parse_url(getenv("DATABASE_URL"));
@@ -35,3 +37,5 @@ pg_free_result($result);
 // Closing connection
 pg_close($dbconn);
  ?>
+</body>
+</html>
