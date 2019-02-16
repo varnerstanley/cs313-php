@@ -117,4 +117,5 @@ body {
 }
 .desc {
   padding-left: 20px;
+  display: block;
 }
