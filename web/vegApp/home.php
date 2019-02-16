@@ -1,26 +1,9 @@
 <?php
 
-try
-{
-  $dbUrl = getenv('DATABASE_URL');
+$db = parse_url(getenv("DATABASE_URL"));
+$db["path"] = ltrim($db["path"], "/");
 
-  $dbOpts = parse_url($dbUrl);
-
-  $dbHost = $dbOpts["host"];
-  $dbPort = $dbOpts["port"];
-  $dbUser = $dbOpts["user"];
-  $dbPassword = $dbOpts["pass"];
-  $dbName = ltrim($dbOpts["path"],'/');
-
-  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-
-  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-}
-catch (PDOException $ex)
-{
-  echo 'Error!: ' . $ex->getMessage();
-  die();
-}
+$conn = pg_connect(getenv("DATABASE_URL"));
 
 foreach ($db->query('SELECT vegetable_name, description FROM names') as $row)
 {
@@ -29,5 +12,26 @@ foreach ($db->query('SELECT vegetable_name, description FROM names') as $row)
   echo '<br/>';
 }
 
+echo "<h2> Hello </h2>";
 
+// Performing SQL query
+$query = 'SELECT * FROM names';
+$result = pg_query($query) or die('Query failed: ' . pg_last_error());
+
+// Printing results in HTML
+echo "<table>\n";
+while ($line = pg_fetch_array($result, null, PGSQL_ASSOC)) {
+    echo "\t<tr>\n";
+    foreach ($line as $col_value) {
+        echo "\t\t<td>$col_value</td>\n";
+    }
+    echo "\t</tr>\n";
+}
+echo "</table>\n";
+
+// Free resultset
+pg_free_result($result);
+
+// Closing connection
+pg_close($dbconn);
  ?>
