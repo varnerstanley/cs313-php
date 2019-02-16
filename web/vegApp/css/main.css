@@ -112,6 +112,9 @@ body {
 .vName {
   text-transform: capitalize;
 }
+.vTitle {
+  padding-left: 20px;
+}
 .vContainer {
   padding-left: 30px;
 }
