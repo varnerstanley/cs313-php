@@ -59,7 +59,7 @@
       foreach ($db->query('SELECT vegetable_name, description FROM names') as $row)
       {
         echo '<div class="vContainer"';
-        echo '<b>' . 'Veggie Name: ' . '</b>' . '<p class="vName">' . $row['vegetable_name'] . '</p>';
+        echo '<p class="vName"><b>' . 'Veggie Name: ' . '</b>' . $row['vegetable_name'] . '</p>';
         echo '<b>Description:</b> ' . $row['description'];
         echo '<br/>';
         echo '</div>';
