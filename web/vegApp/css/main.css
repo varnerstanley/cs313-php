@@ -69,5 +69,5 @@ li a {
   text-transform: capitalize;
 }
 .vContainer {
-  display: flex;
+  margin: 0 auto;
 }
