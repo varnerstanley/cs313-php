@@ -60,7 +60,7 @@
       {
         echo '<div class="vContainer"';
         echo '<b>' . 'Veggie Name: ' . '</b>' . '<p class="vName">' . $row['vegetable_name'] . '</p>';
-        echo '<br/> <b>Description:</b> ' . $row['description'];
+        echo '<b>Description:</b> ' . $row['description'];
         echo '<br/>';
         echo '</div>';
       }
