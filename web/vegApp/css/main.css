@@ -68,3 +68,6 @@ li a {
 .vName {
   text-transform: capitalize;
 }
+.vContainer {
+  display: flex;
+}
