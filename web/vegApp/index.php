@@ -50,10 +50,10 @@
        die();
       }
 
-      foreach ($db->query('SELECT now()') as $row)
-      {
-       print "<p>$row[0]</p>\n\n";
-      }
+      // foreach ($db->query('SELECT now()') as $row)
+      // {
+      //  print "<p>$row[0]</p>\n\n";
+      // }
 
       echo "<h2> Vegetable List: </h2>";
       echo '<div class="vContainer">';
@@ -61,8 +61,6 @@
       {
         echo '<p class="vName"><b>' . 'Veggie Name: ' . '</b>' . $row['vegetable_name'];
         echo '<span class="desc"><b>Description:</b> ' . $row['description'] . '</span></p>';
-        echo '<br/>';
-
       }
       echo '</div>';
       ?>
