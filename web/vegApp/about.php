@@ -26,10 +26,7 @@
         </div>
         <div class="subContainer">
           <div class="bio">
-            <p>My name is Stanley. I'm from Utah. I love to hangout with my family, go boating and workout. Right now I am in love with anything and everything that has to do with full stack engineering. I love building things. I love taking an idea from scratch and the process of development for it to become a reality.</p>
-          </div>
-          <div class="assign-btn">
-            <h3 class="assign"><a href="assignments.php">Assignments</a></h3>
+            <p>My name is Stanley. I'm from Utah. I used to be a fat, now I'm in shape. The reason is I started working out consistently and tracking my macros. This tool is to help you make sure to eat your daily vegetables intake. Shoot for 2 each meal. 5-7 a day. Let this tool do the work for you and you can follow along.</p>
           </div>
       </div>
       </section>
