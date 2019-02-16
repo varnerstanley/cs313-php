@@ -68,7 +68,7 @@
     </main>
 
     <footer>
-        Date thanks to PHP <?php echo date('j F, Y', getlastmod()); ?>
+        Date <?php echo date('j F, Y', getlastmod()); ?>
     </footer>
     <script type="text/javascript" src="js/nav.js"></script>
   </body>

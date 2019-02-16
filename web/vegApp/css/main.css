@@ -34,6 +34,8 @@
 
 footer {
   text-align: center;
+  margin-top: 20px;
+  font-size: .7rem;
 }
 @media only screen and (min-width: 47.5em) {
 
