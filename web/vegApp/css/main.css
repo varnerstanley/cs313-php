@@ -65,3 +65,6 @@ li a {
   align-items: center;
   justify-content: flex-start;
 }
+.vName {
+  text-transform: capitalize;
+}

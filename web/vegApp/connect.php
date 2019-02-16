@@ -39,14 +39,16 @@ foreach ($db->query('SELECT now()') as $row)
  print "<p>$row[0]</p>\n\n";
 }
 
+echo "<h2> Vegetable List: </h2>";
 foreach ($db->query('SELECT vegetable_name, description FROM names') as $row)
 {
-  echo 'Veggie Name: ' . $row['vegetable_name'];
-  echo ' Description: ' . $row['description'];
+  echo '<div class="container"';
+  echo '<b>Veggie Name:</b> ' . $row['<p class="vName">vegetable_name</p>'];
+  echo '<br/> <b>Description:</b> ' . $row['description'];
   echo '<br/>';
+  echo '</div>';
 }
 
-echo "<h2> Hello </h2>";
 ?>
 
 </body>
