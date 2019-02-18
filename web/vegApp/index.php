@@ -55,7 +55,6 @@
       //  print "<p>$row[0]</p>\n\n";
       // }
 
-      echo '<h1 class="vTitle">There will be more here, mine requires more logic than I expected.</h1>';
       echo "<h2 class='vTitle'> Vegetable List: </h2>";
       echo '<div class="vContainer">';
       // foreach ($db->query('SELECT vegetable_name, description FROM names') as $row)
@@ -75,6 +74,15 @@
 
 
       ?>
+      <label>Add New Vegetable:</label>
+          <input type="text" name="vegetable_name" id="vegetable_name" required <?php
+              if(isset($vegetable_name)){ echo "value='$vegetable_name'"; }
+              elseif(isset($row['vegetable_name'])) {echo "value='$row['vegetable_name']'";
+
+                    }?>>
+      <button type="submit" name="action" value="updateProd">Submit</button>
+        <!-- Modify the action name - value pair -->
+        <input type="hidden" name="vegetable_name" value="vegetable_name">
 
     </main>
 
