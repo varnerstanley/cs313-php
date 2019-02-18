@@ -64,6 +64,15 @@
         echo '<span class="desc"><b>Description:</b> ' . $row['description'] . '</span></p>';
       }
       echo '</div>';
+
+      echo '<select name="DROP DOWN NAME">'; // Open your drop down box
+
+      // Loop through the query results, outputing the options one by one
+      foreach ($db->query('SELECT vegetable_name, description FROM names') as $row) {
+         echo '<option value="'.$row['vegetable_name'].'">'.$row['vegetable_name'].'</option>';
+      }
+
+      echo '</select>';// Close your drop down box
       ?>
 
     </main>
