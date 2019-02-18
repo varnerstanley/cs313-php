@@ -74,18 +74,8 @@
 
 
       ?>
-      
-    </div>
-      <label>Add New Vegetable:</label>
-          <input type="text" name="vegetable_name" id="vegetable_name">
-      <button type="submit" name="action" value="<?= htmlspecialchars($topic['id']) ?>">
-      <?= htmlspecialchars($topic['name'])?>"Submit</button>
-        <!-- Modify the action name - value pair -->
-        <input type="hidden" name="vegetable_name" value="vegetable_name">
 
-        <?php
-        $db->query('INSERT INTO names (vegetable_name, description) VALUES ('$vegetable_name')');
-        ?>
+      
 
     </main>
 
