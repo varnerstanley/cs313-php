@@ -74,18 +74,24 @@
 
 
       ?>
+      <?php foreach ($topics as $topic): ?>
+      <label>
+      <input type="checkbox" name="topics[]" value="<?= htmlspecialchars($topic['id']) ?>">
+      <?= htmlspecialchars($topic['name']) ?>
+      </label>
+    <?php endforeach; ?>
+    <div>
+      <input type="submit">
+    </div>
       <label>Add New Vegetable:</label>
-          <input type="text" name="vegetable_name" id="vegetable_name" required <?php
-              if(isset($vegetable_name)){ echo "value='$vegetable_name'"; }
-              elseif(isset($row['vegetable_name'])) {echo "value='$row['vegetable_name']'";
-
-                    }?>>
-      <button type="submit" name="action" value="<?php $vegetable_name ?>"Submit</button>
+          <input type="text" name="vegetable_name" id="vegetable_name">
+      <button type="submit" name="action" value="<?= htmlspecialchars($vegetable_name['id']) ?>">
+      <?= htmlspecialchars($vegetable_name['name'])?>"Submit</button>
         <!-- Modify the action name - value pair -->
         <input type="hidden" name="vegetable_name" value="vegetable_name">
 
         <?php
-        $db->query('INSERT INTO names (vegetable_name, description) VALUES ('Broccoli')');
+        $db->query('INSERT INTO names (vegetable_name, description) VALUES ('$vegetable_name')');
         ?>
 
     </main>
