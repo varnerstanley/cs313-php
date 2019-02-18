@@ -58,14 +58,12 @@
       echo '<h1 class="vTitle">There will be more here, mine requires more logic than I expected.</h1>';
       echo "<h2 class='vTitle'> Vegetable List: </h2>";
       echo '<div class="vContainer">';
-      foreach ($db->query('SELECT vegetable_name, description FROM names') as $row)
-      {
-        echo '<p class="vName"><b>' . 'Veggie Name: ' . '</b>' . $row['vegetable_name'];
-        echo '<span class="desc"><b>Description:</b> ' . $row['description'] . '</span></p>';
-      }
-      echo '</div>';
-
-      echo '<select name="DROP DOWN NAME">'; // Open your drop down box
+      // foreach ($db->query('SELECT vegetable_name, description FROM names') as $row)
+      // {
+      //   echo '<p class="vName"><b>' . 'Veggie Name: ' . '</b>' . $row['vegetable_name'];
+      //   echo '<span class="desc"><b>Description:</b> ' . $row['description'] . '</span></p>';
+      // }
+      echo '<select name="vegetables">'; // Open your drop down box
 
       // Loop through the query results, outputing the options one by one
       foreach ($db->query('SELECT vegetable_name, description FROM names') as $row) {
@@ -73,6 +71,9 @@
       }
 
       echo '</select>';// Close your drop down box
+      echo '</div>';
+
+
       ?>
 
     </main>
