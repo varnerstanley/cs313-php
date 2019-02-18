@@ -74,19 +74,12 @@
 
 
       ?>
-      <?php foreach ($topics as $topic): ?>
-      <label>
-      <input type="checkbox" name="topics[]" value="<?= htmlspecialchars($topic['id']) ?>">
-      <?= htmlspecialchars($topic['name']) ?>
-      </label>
-    <?php endforeach; ?>
-    <div>
-      <input type="submit">
+      
     </div>
       <label>Add New Vegetable:</label>
           <input type="text" name="vegetable_name" id="vegetable_name">
-      <button type="submit" name="action" value="<?= htmlspecialchars($vegetable_name['id']) ?>">
-      <?= htmlspecialchars($vegetable_name['name'])?>"Submit</button>
+      <button type="submit" name="action" value="<?= htmlspecialchars($topic['id']) ?>">
+      <?= htmlspecialchars($topic['name'])?>"Submit</button>
         <!-- Modify the action name - value pair -->
         <input type="hidden" name="vegetable_name" value="vegetable_name">
 
