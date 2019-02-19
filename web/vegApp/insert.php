@@ -37,7 +37,7 @@ catch (PDOException $ex) {
  die();
 }
 
-$query = "INSERT INTO names VALUES ('$_POST[vegetable_name]',
+$query = "INSERT INTO names (vegetable_name, description) VALUES ('$_POST[vegetable_name]',
 '$_POST[description]')";
 $result = pg_query($query);
 ?>
