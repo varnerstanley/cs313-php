@@ -10,7 +10,7 @@
 </body>
 </html>
 <?php
-$db = pg_connect("host=localhost port=5432 dbname=postgres user=postgres password=admin123");
+
 
 // default Heroku Postgres configuration URL
 $dbUrl = getenv('DATABASE_URL');
