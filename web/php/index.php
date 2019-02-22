@@ -7,7 +7,7 @@
   <h1 class="vList">Vegtable List:</h1>
   <?php
   // phpinfo();
-    // require_once 'connectdb.php';
+    require_once 'connectdb.php';
 
     // foreach ($db->query('SELECT vegetable_name, description FROM names') as $row)
     // {
