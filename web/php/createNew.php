@@ -14,5 +14,5 @@ $vegetable_id = $db->lastInsertId();
 //   ]);
 // }
 
-header('Location: index.php');
+header('Location: index.php?id=' . $vegetable_id);
 die();
