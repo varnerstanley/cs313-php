@@ -1,12 +1,12 @@
 <?php
 require_once 'connectdb.php';
-   if( $_POST["vegetable_name"] ) {
-      if (preg_match("/[^A-Za-z'-]/",$_POST['vegetable_name'] )) {
-         die ("invalid name and name should be alpha");
-      }
-      echo "Vegetable name you added ". $_POST['vegetable_name']. "<br />";
-      exit();
-   }
+  //  if( $_POST["vegetable_name"] ) {
+  //     if (preg_match("/[^A-Za-z'-]/",$_POST['vegetable_name'] )) {
+  //        die ("invalid name and name should be alpha");
+  //     }
+  //     echo "Vegetable name you added ". $_POST['vegetable_name']. "<br />";
+  //     exit();
+  //  }
 ?>
 <!DOCTYPE html>
 <html lang="en">
