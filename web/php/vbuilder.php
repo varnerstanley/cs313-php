@@ -1,4 +1,5 @@
 <?php
+require_once 'connectdb.php';
    if( $_POST["vegetable_name"] ) {
       if (preg_match("/[^A-Za-z'-]/",$_POST['vegetable_name'] )) {
          die ("invalid name and name should be alpha");
@@ -13,11 +14,13 @@
 
 
   <div class="dropdown">
-    <form action = "<?php $_PHP_SELF ?>" method = "POST">
+    <form action = "createNew.php" method = "POST">
        Add Vegetable: <input type = "text" name = "vegetable_name" />
        <input type = "submit" />
     </form>
   </div>
+
+
 
 
 <?php include("page/footer.php"); ?>
