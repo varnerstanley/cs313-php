@@ -14,7 +14,7 @@ require_once 'connectdb.php';
 
 
   <div class="dropdown">
-    <form action = "createNew.php" method = "POST">
+    <form action="<?php $_PHP_SELF ?>" method = "POST">
        Add Vegetable: <input type = "text" name = "vegetable_name" />
        <input type = "submit" />
     </form>
