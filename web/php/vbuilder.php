@@ -14,13 +14,18 @@ require_once 'connectdb.php';
 
 
   <div class="dropdown">
-    <form action="createNew.php" method="POST">
+    <form action="vbuilder.php" method="POST">
        Add Vegetable: <input type = "text" name = "vegetable_name" />
        <input type = "submit" />
     </form>
   </div>
 
-
+<?php
+$statement = $db->prepare('INSERT INTO names(vegetable_name) VALUES('$_POST[vegetable_name]')');
+$statement->execute([
+  ':vegetable_name' => $_POST['vegetable_name']]);
+$vegetable_id = $db->lastInsertId();
+?>
 
 
 <?php include("page/footer.php"); ?>
