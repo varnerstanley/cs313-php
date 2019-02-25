@@ -22,9 +22,3 @@ require_once 'connectdb.php';
 <?php include("page/footer.php"); ?>
 </body>
 </html>
-<?php
-$statement = $db->prepare('INSERT INTO names(vegetable_name) VALUES('$_POST[vegetable_name]')');
-$statement->execute([
-  ':vegetable_name' => $_POST['vegetable_name']]);
-$vegetable_id = $db->lastInsertId();
-?>
