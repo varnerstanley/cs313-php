@@ -1,9 +1,9 @@
 <?php
 require_once 'connectdb.php';
     // $statement = $db->prepare('INSERT INTO names(vegetable_name) VALUES(:vegetable_name)');
-    $statement->execute([
-      ':vegetable_name' => $_POST['vegetable_name']]);
-    $vegetable_id = $db->lastInsertId();
+    // $statement->execute([
+    //   ':vegetable_name' => $_POST['vegetable_name']]);
+    // $vegetable_id = $db->lastInsertId();
 
     $sql = 'INSERT INTO names(vegetable_name) VALUES(:vegetable_name)';
     // Create the prepared statement using the acme connection
