@@ -1,5 +1,6 @@
 <?php
 require_once 'connectdb.php';
+require_once 'vbuilder.php';
 
 $statement = $db->prepare('INSERT INTO names(vegetable_name) VALUES('$_POST[vegetable_name]')');
 $statement->execute([
