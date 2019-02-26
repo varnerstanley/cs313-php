@@ -9,5 +9,5 @@ $vegetable_id = $db->lastInsertId();
 
 
 
-// header('Location: index.php');
-// die();
+header('Location: index.php');
+die();
