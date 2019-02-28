@@ -1,5 +1,10 @@
 <?php
+
+$vegetable_name = $_POST['vegetable_name'];
+
 require_once 'connectdb.php';
+
+
 
 try
 {
