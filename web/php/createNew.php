@@ -3,7 +3,7 @@ require_once 'connectdb.php';
 
 try
 {
-$query = 'INSERT INTO names(vegetable_name) VALUES('$_POST[vegetable_name]')';
+$query = 'INSERT INTO names(vegetable_name) VALUES(:vegetable_name)';
 $statement = $db->prepare($query);
 
 $statement->bindValue(':vegetable_name', $vegetable_name);
