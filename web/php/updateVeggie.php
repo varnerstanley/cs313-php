@@ -1,6 +1,6 @@
 <?php
 
-$vegetable_name = $_PUT['description'];
+$vegetable_name = $_PUT['vegetable_name'];
 
 require_once 'connectdb.php';
 
@@ -12,7 +12,7 @@ try
 $query = 'UPDATE names SET vegetable_name = :vegetable_name WHERE veg_id = :veg_id';
 $statement = $db->prepare($query);
 
-$statement->bindValue(':description', $description);
+$statement->bindValue(':vegetable_name', $vegetable_name);
 
 $statement->execute();
 // $vegId = $db->lastInsertId("veg_id_seq");
