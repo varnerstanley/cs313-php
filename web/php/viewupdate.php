@@ -21,7 +21,7 @@ require_once 'connectdb.php';
        echo '<select name="vegetables">'; // Open your drop down box
        // Loop through the query results, outputing the options one by one
        foreach ($db->query('SELECT vegetable_name, veg_id FROM names') as $row) {
-          echo '<option value="'.$row['vegetable_name'].'" selected>'.$row['veg_id'].'</option>';
+          echo '<option value="'.$row['veg_id'].'" selected>'.$row['vegetable_name'].'</option>';
        }
        echo '</select>';// Close your drop down box
        echo '</div>';
