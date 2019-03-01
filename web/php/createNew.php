@@ -8,7 +8,7 @@ require_once 'connecdb.php';
 
 try
 {
-$db = vegConnect();
+// $db = vegConnect();
 $query = 'INSERT INTO names(vegetable_name) VALUES(:vegetable_name)';
 $statement = $db->prepare($query);
 
@@ -34,13 +34,3 @@ die(); // we always include a die after redirects. In this case, there would be 
        // but in general, there could be things after here that we don't want them
        // to see.
 ?>
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-  <?php  echo "Hi george"; ?>
-  </body>
-</html>
