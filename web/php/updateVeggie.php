@@ -1,6 +1,7 @@
 <?php
 
 $vegetable_name = $_PUT['vegetable_name'];
+$veg_id = $_PUT['veg_id'];
 
 require_once 'connectdb.php';
 
