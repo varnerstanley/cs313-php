@@ -4,12 +4,12 @@
 
 
 <div class="dropdown">
-  <h1 class="vList">Vegtable List:</h1>
+  <h1 class="vList">Vegetable List:</h1>
   <?php
   // phpinfo();
     require_once 'connectdb.php';
 
-    $db = vegConnect();
+    // $db = vegConnect();
     echo '<select name="vegetables">'; // Open your drop down box
 
     // Loop through the query results, outputing the options one by one
