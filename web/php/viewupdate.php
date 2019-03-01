@@ -26,6 +26,7 @@ require_once 'connectdb.php';
        echo '</select>';// Close your drop down box
        echo '</div>';
      ?>
+     New Name: <input type="text" name="vegetable_name">
 
      <input type="submit">
   </form>
