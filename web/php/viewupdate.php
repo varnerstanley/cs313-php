@@ -24,7 +24,6 @@ require_once 'connectdb.php';
           echo '<option value="'.$row['veg_id'].'" selected>'.$row['vegetable_name'].'</option>';
        }
        echo '</select>';// Close your drop down box
-       echo '</div>';
      ?>
      New Name: <input type="text" name="vegetable_name">
 
