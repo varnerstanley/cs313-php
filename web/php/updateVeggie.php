@@ -13,6 +13,7 @@ $query = 'UPDATE names SET vegetable_name = :vegetable_name WHERE veg_id = :veg_
 $statement = $db->prepare($query);
 
 $statement->bindValue(':vegetable_name', $vegetable_name);
+$statement->bindValue(':veg_id', $veg_id);
 
 $statement->execute();
 // $vegId = $db->lastInsertId("veg_id_seq");
