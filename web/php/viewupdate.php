@@ -24,7 +24,7 @@ require_once 'connectdb.php';
          echo '<input type="text" name="vegetable_name">';
          echo '<input type="submit">';
          echo '</form>';
-         echo '</div>'
+         echo '</div>';
        }
      ?>
 </div>
