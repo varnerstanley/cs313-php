@@ -24,6 +24,7 @@ require_once 'connectdb.php';
          echo '<div class="textUp">';
          echo 'Name: ' . $row['vegetable_name'] . " " . "id: " . $row['veg_id'];
          echo '</div>';
+         echo '<input type="hidden" name="veg_id" value="'.$row['veg_id'].'">';
          echo '<input type="text" name="vegetable_name">';
          echo '<input type="submit">';
          echo '</form>';
