@@ -21,7 +21,9 @@ require_once 'connectdb.php';
        foreach ($db->query('SELECT vegetable_name, veg_id FROM names') as $row) {
          echo '<div class="dropdown">';
          echo '<form action="updateVeggie.php" method="POST">';
+         echo '<div class="textUp">';
          echo 'Name: ' . $row['vegetable_name'] . "id: " . $row['veg_id'];
+         echo '</div>';
          echo '<input type="text" name="vegetable_name">';
          echo '<input type="submit">';
          echo '</form>';
