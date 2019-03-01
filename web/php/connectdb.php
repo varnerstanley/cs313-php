@@ -1,7 +1,7 @@
 <?php
 
   // default Heroku Postgres configuration URL
-function vegConnect() {
+// function vegConnect() {
 try
   {
     $dbUrl = getenv('DATABASE_URL');
@@ -23,5 +23,5 @@ try
     echo 'Error!: ' . $ex->getMessage();
     die();
   }
-}
+// }
 ?>
