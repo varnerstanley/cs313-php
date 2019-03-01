@@ -2,7 +2,7 @@
 
 $vegetable_name = $_POST['vegetable_name'];
 
-require_once 'connections.php';
+require_once 'connecdb.php';
 
 
 
