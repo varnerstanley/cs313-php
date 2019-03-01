@@ -15,23 +15,24 @@ require_once 'connectdb.php';
 <?php include("page/head.php"); ?>
 
 <div class="dropdown">
-  <form action="updateVeggie.php" method="POST">
-     Select Vegetable to Update:
      <?php
-       echo '<select name="vegetables">'; // Open your drop down box
+       echo '<div class="dropdown">'; // Open your drop down box
        // Loop through the query results, outputing the options one by one
        foreach ($db->query('SELECT vegetable_name, veg_id FROM names') as $row) {
-          echo '<option value="'.$row['veg_id'].'" selected><a href="?update_row">'.$row['vegetable_name'].'</a></option>';
+         echo '<form action="updateVeggie.php" method="POST"';
+         echo 'Name: ' . $row['vegetable_name'] . "id: " . $row['veg_id'];
+         echo '<input type="text" name="vegetable_name">';
+         echo '<input type="submit">';
+         echo '</form>';
+         echo '</div>'
        }
-       echo '</select>';// Close your drop down box
      ?>
-     New Name: <input type="text" name="vegetable_name">
-
-     <input type="submit">
-  </form>
 </div>
 
 
 <?php include("page/footer.php"); ?>
 </body>
 </html>
+<script>
+
+</script>
