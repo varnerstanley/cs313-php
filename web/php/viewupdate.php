@@ -16,9 +16,10 @@ require_once 'connectdb.php';
 
 <div class="dropdown">
      <?php
-       echo '<div class="dropdown">'; // Open your drop down box
+        // Open your drop down box
        // Loop through the query results, outputing the options one by one
        foreach ($db->query('SELECT vegetable_name, veg_id FROM names') as $row) {
+         echo '<div class="dropdown">;
          echo '<form action="updateVeggie.php" method="POST"';
          echo 'Name: ' . $row['vegetable_name'] . "id: " . $row['veg_id'];
          echo '<input type="text" name="vegetable_name">';
