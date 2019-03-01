@@ -9,13 +9,13 @@ require_once 'connectdb.php';
 try
 {
 // $db = vegConnect();
-$query = 'INSERT INTO names(vegetable_name) VALUES(:vegetable_name)';
+$query = 'INSERT INTO names(vegetable_name) VALUES(:vegetable_name) RETURNING id';
 $statement = $db->prepare($query);
 
 $statement->bindValue(':vegetable_name', $vegetable_name);
 
 $statement->execute();
-$vegId = $db->lastInsertId("veg_id_seq");
+// $vegId = $db->lastInsertId("veg_id_seq");
 
 
 
