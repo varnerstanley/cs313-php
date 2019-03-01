@@ -9,7 +9,7 @@ require_once 'connectdb.php';
 try
 {
 // $db = vegConnect();
-$query = 'UPDATE names SET description = :description WHERE veg_id = :veg_id';
+$query = 'UPDATE names SET vegetable_name = :vegetable_name WHERE veg_id = :veg_id';
 $statement = $db->prepare($query);
 
 $statement->bindValue(':description', $description);
