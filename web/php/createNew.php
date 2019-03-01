@@ -9,7 +9,7 @@ require_once 'connectdb.php';
 try
 {
 // $db = vegConnect();
-$query = 'INSERT INTO names(vegetable_name) VALUES(:vegetable_name) RETURNING id';
+$query = 'INSERT INTO names(vegetable_name) VALUES(:vegetable_name)';
 $statement = $db->prepare($query);
 
 $statement->bindValue(':vegetable_name', $vegetable_name);
