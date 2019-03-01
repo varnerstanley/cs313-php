@@ -9,7 +9,7 @@
   // phpinfo();
     require_once 'connectdb.php';
 
-    // $db = vegConnect();
+    $db = vegConnect();
     echo '<select name="vegetables">'; // Open your drop down box
 
     // Loop through the query results, outputing the options one by one
