@@ -28,6 +28,7 @@ catch (Exception $ex)
 	die();
 }
 // finally, redirect them to a new page to actually show the topics
+echo "Hi george";
 header("Location: index.php");
 die(); // we always include a die after redirects. In this case, there would be no
        // harm if the user got the rest of the page, because there is nothing else
